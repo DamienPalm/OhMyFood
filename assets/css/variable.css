@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+    --background-header-color: #EAEAEA;
+    --background-color: #F6F6F6;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --grey-icon: #7E7E7E;
+    --new-legend-color: #008766;
+    --footer-color: #353535;
+
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 28px;
+
+    --font-family-title: 'Shrikhand', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+
+    --spacing-2xs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 28px;
+    --spacing-3xl: 32px;
+    --spacing-4xl: 36px;
+    --spacing-5xl: 40px;
+    --spacing-6xl: 44px;
+    --spacing-7xl: 48px;
+    --spacing-8xl: 52px;
+    --spacing-9xl: 56px;
+    --spacing-10xl: 60px;
+    --spacing-11xl: 64px;
+    --spacing-12xl: 68px;
+
+    --border-radius-sm: 15px;
+    --border-radius-md: 20px;
+    --border-radius-lg: 25px;
+    --border-radius-xl: 35px;
+}
