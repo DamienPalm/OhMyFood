@@ -273,6 +273,7 @@
 @media screen and (min-width: 768px) {
     .main__restaurants-section__cards-section {
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-lg);
         padding-inline: var(--spacing-md);
@@ -283,11 +284,45 @@
 /*********************************************** DESKTOP VERSION ***********************************************/
 
 @media screen and (min-width: 1024px) {
+    .main__explore-restaurant__title {
+        font-size: var(--font-size-5xl);
+        line-height: var(--spacing-5xl);
+    }
+
+    .main__explore-restaurant__subtitle {
+        padding-top: var(--spacing-xl);
+    }
+
+    .main__how-it-works__title {
+        max-width: 1053px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .main__how-it-works__step-by-step {
         flex-direction: row;
+        max-width: 1053px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .main__how-it-works__step-by-step__step {
         width: calc(100%/3 - var(--spacing-lg));
+    }
+
+    .main__restaurants-section__title {
+        max-width: 1053px;
+        margin: 0 auto;
+    }
+
+    .main__restaurants-section__cards-section {
+        max-width: 1080px;
+        margin: 0 auto;
+        column-gap: var(--spacing-13xl);
+        row-gap: var(--spacing-7xl);
+    }
+
+    .main__restaurants-section__cards-section__card {
+        max-width: 490px;
     }
 }
