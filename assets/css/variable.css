@@ -15,6 +15,7 @@
     --font-size-lg: 18px;
     --font-size-xl: 24px;
     --font-size-2xl: 28px;
+    --font-size-icon: 20px;
 
     --font-family-title: 'Shrikhand', sans-serif;
     --font-family-text: 'Roboto', sans-serif;
@@ -36,9 +37,17 @@
     --spacing-10xl: 60px;
     --spacing-11xl: 64px;
     --spacing-12xl: 68px;
+    --spacing-13xl: 72px;
 
+    --border-radius-xs: 2px;
     --border-radius-sm: 15px;
     --border-radius-md: 20px;
     --border-radius-lg: 25px;
     --border-radius-xl: 35px;
+    --border-radius-round: 100%;
+
+    --step-by-step__numbers-width: 24px;
+    --step-by-step__numbers-height: 24px;
+
+    --card-height: 251px;
 }

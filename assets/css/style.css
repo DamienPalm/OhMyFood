@@ -13,4 +13,85 @@ body {
     padding-block: var(--spacing-sm);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+    z-index: 3;
+}
+
+.footer {
+    background-color: var(--footer-color);
+}
+
+.footer__navbar-footer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+
+.footer__navbar-footer__logo {
+    font-family: var(--font-family-title);
+    font-weight: 400;
+    font-size: var(--font-size-lg);
+    line-height: var(--spacing-xl);
+    color: var(--white-color);
+}
+
+.footer__navbar-footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    color: var(--white-color);
+}
+
+.footer__navbar-footer__list__item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.footer__navbar-footer__list__item__icon {
+    width: 11px;
+}
+
+.footer__navbar-footer__list__item__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.loader {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    inset: 0;
+    animation: disapear 0.3s 2s forwards;
+    z-index: 2;
+}
+
+@keyframes disapear {
+    to {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.loader__animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: bounce 0.35s ease infinite alternate;
+}
+
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
 }
