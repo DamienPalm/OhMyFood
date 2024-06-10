@@ -39,6 +39,7 @@
 
 .main__dish-container__title-container__like-button {
     position: relative;
+    cursor: pointer;
 }
 
 .main__dish-container__title-container__like-button__heart {
