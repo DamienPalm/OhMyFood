@@ -65,8 +65,8 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     inset: 0;
-    animation: disapear 0.3s 2s forwards;
-    z-index: 2;
+    animation: disapear 0.3s 3s forwards;
+    z-index: 4;
 }
 
 @keyframes disapear {
@@ -84,17 +84,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    animation: bounce 0.35s ease infinite alternate;
+    width: 100%;
+    animation: bounce 1.5s infinite;
 }
 
 
+
+
 @keyframes bounce {
-    from {
-        transform: translateY(0);
+    0% {
+        transform: scale(0.25);
     }
 
-    to {
-        transform: translateY(-20px);
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(0.25);
     }
 }
 
