@@ -72,7 +72,6 @@ body {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-    height: 100%;
     inset: 0;
     animation: disapear 0.3s 3s forwards;
     z-index: 4;
@@ -92,9 +91,9 @@ body {
     position: relative;
     font-family: var(--font-family-title);
     font-weight: 400;
-    font-size: var(--font-size-10xl);
+    font-size: var(--font-size-5xl);
     color: transparent;
-    -webkit-text-stroke: 3px var(--black-color);
+    -webkit-text-stroke: 1px var(--black-color);
 }
 
 .loader__animation::before {
@@ -125,6 +124,16 @@ body {
     }
 }
 
+/*********************************************** TABLET VERSION ***********************************************/
+@media screen and (min-width: 768px) {
+    .loader__animation {
+        font-size: var(--font-size-7xl);
+        -webkit-text-stroke: 2px var(--black-color);
+    }
+}
+
+
+
 
 /*********************************************** DESKTOP VERSION ***********************************************/
 
@@ -147,5 +156,10 @@ body {
 
     .footer__navbar-footer__logo {
         padding-right: var(--spacing-12xl);
+    }
+
+    .loader__animation {
+        font-size: var(--font-size-10xl);
+        -webkit-text-stroke: 3px var(--black-color);
     }
 }
