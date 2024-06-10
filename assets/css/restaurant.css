@@ -173,6 +173,7 @@
     font-size: var(--font-size-md);
     line-height: var(--spacing-lg);
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .main__dish-container__button:hover {
