@@ -154,7 +154,7 @@
     display: flex;
     transform: translateX(59px);
     margin-left: -59px;
-    transition: transform 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .main__dish-container__starter-main-dessert__card__card-animation__price {
@@ -167,6 +167,7 @@
 
 .main__dish-container__starter-main-dessert__card:hover .main__dish-container__starter-main-dessert__card__card-animation {
     transform: translateX(0);
+    margin-left: 0;
 }
 
 .main__dish-container__starter-main-dessert__card__card-animation__icon {
