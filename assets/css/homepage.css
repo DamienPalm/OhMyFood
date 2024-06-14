@@ -233,33 +233,27 @@
 }
 
 .main__restaurants-section__cards-section__cards__link__body-card__like-button__heart {
-    position: absolute;
-    right: var(--spacing-xs);
-    color: var(--black-color);
-    font-size: var(--font-size-icon);
-    /* transition: opacity 1s ease; */
-
-}
-
-
-.main__restaurants-section__cards-section__cards__link__body-card__like-button__heart--gradient {
-    position: absolute;
-    right: var(--spacing-xs);
     color: transparent;
-    font-size: var(--font-size-icon);
-    background-image: linear-gradient(to bottom, var(--primary-color) -11%, var(--secondary-color)123%);
+    background-image: linear-gradient(to bottom, #9356DC -11%, #FF79DA 123%);
     background-clip: text;
-    transform: scale(0);
-    transition: transform 0.5s ease;
+    font-size: var(--font-size-icon);
 }
 
-.main__restaurants-section__cards-section__cards__link__body-card__like-button:hover .main__restaurants-section__cards-section__cards__link__body-card__like-button__heart--gradient {
-    transform: scale(1.1);
+.main__restaurants-section__cards-section__cards__link__body-card__like-button::before {
+    font: var(--fa-font-regular);
+    content: '\f004';
+    color: black;
+    background: white;
+    font-size: var(--font-size-icon);
+    position: absolute;
+    height: 100%;
+    transition: all 0.3s ease-out;
 }
 
-/* .main__restaurants-section__cards-section__cards__link__body-card__like-button:hover .main__restaurants-section__cards-section__cards__link__body-card__like-button__heart {
-    opacity: 0;
-} */
+.main__restaurants-section__cards-section__cards__link__body-card__like-button:hover::before {
+    height: 0%;
+    color: transparent;
+}
 
 
 /*********************************************** TABLET VERSION ***********************************************/
