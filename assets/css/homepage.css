@@ -36,7 +36,7 @@
 
 .main__explore-restaurant__title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     line-height: var(--spacing-2xl);
     padding-inline: var(--spacing-8xl);
 }
@@ -206,6 +206,7 @@
 .main__restaurants-section__cards-section__card__link__body-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: var(--spacing-md);
 }
 
@@ -230,11 +231,12 @@
 
 .main__restaurants-section__cards-section__cards__link__body-card__like-button {
     position: relative;
+    padding-right: var(--spacing-sm);
 }
 
 .main__restaurants-section__cards-section__cards__link__body-card__like-button__heart {
     color: transparent;
-    background-image: linear-gradient(to bottom, #9356DC -11%, #FF79DA 123%);
+    background-image: linear-gradient(to bottom, var(--primary-color) -11%, var(--secondary-color) 123%);
     background-clip: text;
     font-size: var(--font-size-icon);
 }
@@ -242,8 +244,8 @@
 .main__restaurants-section__cards-section__cards__link__body-card__like-button::before {
     font: var(--fa-font-regular);
     content: '\f004';
-    color: black;
-    background: white;
+    color: var(--black-color);
+    background: var(--white-color);
     font-size: var(--font-size-icon);
     position: absolute;
     height: 100%;

@@ -46,7 +46,7 @@
 
 .main__dish-container__title-container__like-button__heart {
     color: transparent;
-    background-image: linear-gradient(to bottom, #9356DC -11%, #FF79DA 123%);
+    background-image: linear-gradient(to bottom, var(--primary-color) -11%, var(--secondary-color) 123%);
     background-clip: text;
     font-size: var(--font-size-icon);
 }
@@ -178,8 +178,8 @@
     background-color: var(--tertiary-color);
     height: 69px;
     width: 59px;
-    font-size: 22px;
-    color: white;
+    font-size: var(--font-size-icon-xl);
+    color: var(--white-color);
     align-content: center;
     text-align: center;
     border-top-right-radius: var(--border-radius-sm);
